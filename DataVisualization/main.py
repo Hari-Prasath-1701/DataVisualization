@@ -8,7 +8,7 @@ import numpy as np
 app = Flask(__name__)
 
 def pie_charts():
-	mydb = mysql.connector.connect(host="localhost",port="3308",user="root",passwd="root",database="swissrank",)
+	mydb = mysql.connector.connect(host="ur host",port="ur port",user="username",passwd="urpassword",database="dbname",)
 
 	mycursor = mydb.cursor()
 	# 1)
@@ -36,7 +36,7 @@ def pie_charts():
 
 
 def bar_charts():
-	mydb = mysql.connector.connect(host="localhost",port="3308",user="root",passwd="root",database="swissrank",)
+	mydb = mysql.connector.connect(host="ur host",port="ur port",user="username",passwd="urpassword",database="dbname",)
 
 	mycursor = mydb.cursor()
 	# 1)
