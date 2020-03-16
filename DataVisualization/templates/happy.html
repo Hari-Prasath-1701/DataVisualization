@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC|Open+Sans&display=swap" rel="stylesheet"> 
+<style>
+.header
+{
+  position: relative;
+  left:530px;
+  top:30px;
+  font-size: 70px;
+}
+#logo
+{position: relative;
+  top:30px;
+}
+.card {
+  box-shadow: 0 6px 10px 0 rgba(0,0,0,0.3);
+  transition: 0.3s;
+  /*
+  background-color: #9100FF;
+  */
+  background-color: white;
+  border-radius: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40%;
+  height: 40%;
+  padding-bottom: 20px;
+}
+
+.card:hover {
+  box-shadow: 0 12px 18px 0 rgba(0,0,0,0.3);
+  border-radius: 15px;
+  transition: 0.2s;
+}
+
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+h1{
+    font-family: 'Noto Sans TC';
+    color: white;
+    font-size : 30px;
+    text-align: left;
+    position: relative;
+    top:-78px;
+    left:50px;
+    padding-top: -50px;
+  }
+
+h3{
+    font-family: sans-serif;
+    color:grey;
+}
+.button {
+  font-family: sans-serif;
+  color:#64b3f4;
+  background-color:white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 20px;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+}
+.button:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3);
+  transition: 0.3s;
+}
+#but{
+  padding-top: 25px;
+}
+img{
+  padding-top: 15px;
+}
+body{
+    background: #c2e59c;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #64b3f4, #c2e59c);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #64b3f4, #c2e59c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+;
+}
+</style>
+</head>
+<body>
+  <div class="header">
+ <img src="swissbg.png" id=logo height="50"></img>
+    <h1 style="font-size: 40px"> Swiss Ranks</h1>
+   </div> 
+    <div class="card" align="center">
+        <div class="container">
+          <br><br><br>
+            <button type=button id=b1 height=80 class="button" width=80 >Home</button><br><br>
+            <button type=button id=b2 height=80 class="button" width=80 onclick="window.location.href = '{{ url_for('move') }}';"> DataVisualization</button><b>
+        <br><br><button type=button id=b2 height=80 class="button" width=80 onclick="window.location.href = '{{ url_for('move') }}';"> ViewDB</button><b>
+        </div>
+    
+    </div>
+</body>
+</html> 

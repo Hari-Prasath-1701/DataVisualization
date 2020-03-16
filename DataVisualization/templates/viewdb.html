@@ -1,0 +1,88 @@
+<html>
+<head>
+     <meta charset = "utf-8">
+   <link rel="icon" type="image/png" href="logo.png"> 
+    <title>ViewDB</title>
+    <link href = 'http://fonts.googleapis.com/css?family=Calligraffitti'rel = 'stylesheet' type = 'text/css'>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+ 
+</head>
+<body  id=bg bgcolor="red">
+<script type="text/javascript">
+  $(document).ready(function(){
+  //  $(".tb1").hide();
+  $("#p1").click(function(){
+  if ($("#pass").val() == '1234') {
+     //$(".tb1").show();
+     //$("#pwd").hide();
+}
+ else {
+     alert("Not a InValid");
+}  
+  });
+  
+});
+
+</script>
+<div class="container">
+  <div>
+  
+
+
+
+</div>
+<center>
+    <table class="table table-striped">
+      <caption><h3>Part Details</h3></caption>
+        <thead>
+        <tr>
+            <th>PartNo </th>
+            <th>PartName </th>
+            <th>MatCategory </th>
+            <th>TrackerId</th>
+        </tr>
+        </thead>
+        <tbody>
+            {% for row in values %} 
+                <tr>
+                    <td>{{row[0]}}</td>
+                    <td>{{row[1]}}</td>
+                    <td>{{row[2]}}</td>
+                    <td>{{row[3]}}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table><br><Br><BR>
+    <table class="table table-striped">
+      <caption><h3>Part StatusTracker</h3></caption>
+        <thead>
+        <tr>
+            <th>TrackerId </th>
+            <th>CreatedBy</th>
+            <th>Approver </th>
+            <th>Status</th>
+        </tr>
+        </thead>
+        <tbody>
+            {% for row in values1 %} 
+                <tr>
+                    <td> {{row[0]}}</td>
+                    <td> {{row[1]}}</td>
+                    <td> {{row[2]}}</td>
+                    <td> {{row[3]}}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</center></div>
+
+
+
+</body>
+</html>
+
+

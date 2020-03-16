@@ -1,0 +1,410 @@
+<html>
+<head>
+   <meta charset = "utf-8">
+   <link rel="icon" type="image/png" href="logo.png"> 
+  <title>SwissRank Challenge</title>
+  <link href = 'http://fonts.googleapis.com/css?family=Calligraffitti'rel = 'stylesheet' type = 'text/css'>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function()
+{   
+$("#bc1").click(function()
+{
+        $('.result').empty();
+        $('.result').html('<img src="/static/PieChart.png" style="background-color:blue;height:400px;width:500px;max-width: 1360px;border-radius: 25px;border: 3px solid black;">" />'); 
+});
+$("#bc2").click(function()
+{
+        $('.result').empty();
+        $('.result').html('<img src="/static/BarChart.png" style="background-color:blue;height:400px;width:500px;max-width: 1360px;border-radius: 25px;border: x solid black;">" />'); 
+});
+
+$("#bc3").click(function()
+{
+        $('.result').empty();
+        $('.result').html('<img src="/static/BarChart1.png" style="background-color:blue;height:400px;width:500px;max-width: 1360px;border-radius: px;border: px solid black;">" />'); 
+});
+
+$("#bc4").click(function()
+{
+        $('.result').empty();
+        $('.result').html('<img src="/static/BarChart2.png" style="background-color:blue;height:400px;width:500px;max-width: 1360px;border-radius: px;border: px solid black;">" />'); 
+});
+
+
+});
+
+</script>
+</head>
+<body  id=bg style="background: #4CA1AF;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #C4E0E5, #4CA1AF);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #C4E0E5, #4CA1AF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+">
+<style type = "text/css">
+
+ .headero
+{  
+  background:silver;
+ background-color: rgba(109,200,0,.5);
+ width:1600;
+ height:120;
+ border-radius: 25px;
+ 
+ }
+
+.card {
+  box-shadow: 0 6px 10px 0 rgba(0,0,0,0.3);
+  transition: 0.3s;
+  /*
+  background-color: #9100FF;
+  */
+  background-color: white;
+  border-radius: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40%;
+  height: 40%;
+  padding-bottom: 20px;
+}
+
+.card:hover {
+  box-shadow: 0 12px 18px 0 rgba(0,0,0,0.3);
+  border-radius: 15px;
+  transition: 0.2s;
+}
+
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.button {
+  font-family: sans-serif;
+  color:#64b3f4;
+  background-color:white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 20px;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+}
+.button:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3);
+  transition: 0.3s;
+}
+
+
+ .footer
+ {
+  flex:50%;
+    
+    
+  max-height: 10%
+  background:silver;
+ background-color: rgba(109,20,500,.5);
+ width:1350px;
+ height:30px;
+ border-radius: 25px;
+ position: fixed;
+ top: 648;
+ right:10;
+ }
+ #bg
+ {
+  background-color: NavajoWhite;
+ }
+  #cg {
+  font-size: 60px;
+  font-family: Raleway;
+  -webkit-text-stroke: 0.5px white;
+  color: mediumblue;
+  position: absolute;
+  bottom: 580;
+  right:480;
+  }
+
+  #cg:hover
+  {
+    color : red;
+  }
+.buton
+{ 
+  flex:50%;
+  flex-wrap: wrap;
+  min-width: 10%;
+  max-width: 100%;
+  max-height: 100%;
+  
+  width :215;
+  height:400;
+  position: fixed;
+  left : 20;
+  top: 200;
+  border-radius: 25px;
+}
+#logo
+{position: absolute;
+  top:10;
+left:10;
+  border-radius: 85px;
+}
+#bc1
+{
+
+  border: none;
+  color: white;
+  padding: 20px 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  width:180;
+  position: relative;
+  left : 40px;
+  bottom: -30px;
+  background-color: rgba(0,0,0,.5); 
+   font-family: arieal black;
+  border: 2px solid #FFFFFF;
+  border-radius: 25px;
+
+  
+}
+#bc1:hover
+{
+  transform: scale(1.25);
+  background-color: rgba(0,300,50,.5); 
+}
+
+
+#bc2
+{
+
+  border: none;
+  color: white;
+  padding: 20px 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  width:180;
+  position: relative;
+  left : 40px;
+  bottom: -50px;
+  background-color: rgba(0,0,0,.5); 
+   font-family: arieal black;
+  border: 2px solid #FFFFFF;
+  border-radius: 25px;
+
+  
+}
+#bc2:hover
+{
+  transform: scale(1.25);
+  background-color: rgba(0,300,50,.5); 
+}
+
+
+#bc3
+{
+
+  border: none;
+  color: white;
+  padding: 20px 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  width:180;
+  position: relative;
+  left : 40px;
+  bottom: -70px;
+  background-color: rgba(0,0,0,.5); 
+   font-family: arieal black;
+  border: 2px solid #FFFFFF;
+  border-radius: 25px;
+
+  
+}
+#bc3:hover
+{
+  transform: scale(1.25);
+  background-color: rgba(0,300,50,.5); 
+}
+
+#bc4
+{
+
+  border: none;
+  color: white;
+  padding: 20px 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  width:180;
+  position: relative;
+  left : 40px;
+  bottom: -90px;
+  background-color: rgba(0,0,0,.5); 
+   font-family: arieal black;
+  border: 2px solid #FFFFFF;
+  border-radius: 25px;
+
+  
+}
+#bc4:hover
+{
+  transform: scale(1.25);
+  background-color: rgba(0,300,50,.5); 
+}
+
+.covai {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+#btt
+{ flex :50%;
+  position: fixed;
+  right : 1150;
+}
+#foot
+{
+  position: absolute;
+  bottom: -100px;
+  left:600;
+  font-family: algerian;
+}
+
+.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+    width: 70%;
+    margin:auto;
+  }
+  .container
+  {
+    height: 800;
+    width :800;
+    max-width: 100%;
+    max-height: 100%;
+    position:fixed;
+    top:180px;
+    left: 200px;
+  }
+
+  #mq
+  {
+    position : absolute;
+    background-color: blue;
+    top:150;
+    outline-color: white;
+    width: 1350px;
+    color : white;
+    max-width: 100%;
+  }
+  .charts{
+      background-color: rgba(0,0,89,.5);
+      position: absolute;
+      bottom : -40px;
+    height: 600;
+    width:270;
+    left:1020;
+    border:2px solid black;
+    border-radius: 25px;
+      }
+      #neu
+      {
+        height: 80%;
+        padding: 10px 0;
+      }
+      #bt
+      {
+        position: absolute;
+        left:1250;
+        top:50;
+        height: 50px;
+        width: 100px;
+        background-color: lightblue;
+        border : 2px solid black;
+        color : darkblue;
+        font-size: 25px;
+      }
+      #bt:hover
+      {
+        color : white;
+      }
+
+</style>
+<div class="covai">
+<div class="header">
+  <img src="/static/swiss.png" id=logo height="110"></img>
+  <font color="yellow">
+    <center><br>
+<b id=cg >SWISS RANKS </b></font></center>
+</font>
+
+</div>
+
+<br><br><br>
+<div class="card" align="center">
+        <div class="container">
+          <br><br><br>
+            <button type=button  height=80 class="button" width=80 >Home</button><br><br>
+            <button type=button  height=80 class="button" width=80 onclick="window.location.href = '{{ url_for('move') }}';"> DataVisualization</button><b>
+        <br><br><button type=button  height=80 class="button" width=80 onclick="window.location.href = '{{ url_for('db') }}';"> ViewDB</button><b>
+        </div>
+    
+    </div>
+
+<div class="footer">
+  
+  </div>
+<div class="contain">
+  <br>
+  
+    <div class="result" 
+style="height:400px;width:500px;max-width: 1360px;
+position: relative;
+  left: 200px;
+  bottom: -10px">
+  <h1> <font color="white">Please Select a report -> </font></h1>
+</div>
+
+      
+
+  
+    </div>
+
+
+
+
+
+  <div class=charts>
+    <button type=button id='bc1' height='50px' width=80 >PieChart<h6>Statics On All Parts</h6></button>
+    <button type=button id='bc2' height=50 width=80 >BarChart<h6>Statics On Part_Status</h6></button>
+    <button type=button id='bc3' height=50 width=80 >BarChart<h6>Statics On Parts_CreatedBy</h6></button><br>
+    <button type=button id='bc4' height=50 width=80 >BarChart<h6>Statics On Parts_ApprovedBy</h6></button>
+</div>
+
+</body>
+</html>
+
+

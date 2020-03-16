@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC|Open+Sans&display=swap" rel="stylesheet"> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function()
+{   
+$("#bc1").click(function()
+{
+        $('.result').empty();
+        $('.result').html('<img src="/static/PieChart.png" style="height:480px;position:relative;bottom:100px;width:500px;border-radius: 0px;border: px solid black;" />'); 
+});
+$("#bc2").click(function()
+{
+        $('.result').empty();
+        $('.result').html('<img src="/static/BarChart.png" style="height:450px;position:relative;bottom:100px;width:500px;max-width: 1360px;border-radius: 10px;border: 0px solid black;">" />'); 
+});
+
+$("#bc3").click(function()
+{
+        $('.result').empty();
+        $('.result').html('<img src="/static/BarChart1.png" style="height:450px;position:relative;bottom:100px;width:500px;max-width: 1360px;border-radius: px;border: px solid black;">" />'); 
+});
+
+$("#bc4").click(function()
+{
+        $('.result').empty();
+        $('.result').html('<img src="/static/BarChart2.png" style="height:450px;position:relative;bottom:100px;width:500px;max-width: 1360px;border-radius: px;border: px solid black;">" />'); 
+});
+
+
+});
+
+</script>
+
+<style>
+.header
+{
+  position: relative;
+  left:530px;
+  top:30px;
+  font-size: 70px;
+}
+#logo
+{position: relative;
+  top:30px;
+}
+.card {
+  box-shadow: 0 6px 10px 0 rgba(0,0,0,0.3);
+  transition: 0.3s;
+  /*
+  background-color: #9100FF;
+  */
+  background-color: white;
+  border-radius: 15px;
+  position: absolute;
+  top: 50%;
+  right: 67%;
+  transform: translate(-50%, -50%);
+  width: 20%;
+  height: 40%;
+  padding-bottom: 20px;
+}
+
+.card:hover {
+  box-shadow: 0 12px 18px 0 rgba(0,0,0,0.3);
+  border-radius: 15px;
+  transition: 0.2s;
+}
+
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+
+.card1 {
+  box-shadow: 0 6px 10px 0 rgba(0,0,0,0.3);
+  transition: 0.3s;
+  /*
+  background-color: #9100FF;
+  */
+  background-color: white;
+  border-radius: 15px;
+  position: absolute;
+  top: 50%;
+  right: -5%;
+  transform: translate(-50%, -50%);
+  width: 20%;
+  height: 82%;
+  padding-bottom: 20px;
+}
+
+.card1:hover {
+  box-shadow: 0 12px 18px 0 rgba(0,0,0,0.3);
+  border-radius: 15px;
+  transition: 0.2s;
+}
+
+.container1 {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+
+
+h1{
+    font-family: 'Noto Sans TC';
+    color: white;
+    font-size : 30px;
+    text-align: left;
+    position: relative;
+    top:-78px;
+    left:50px;
+    padding-top: -50px;
+  }
+
+h3{
+    font-family: sans-serif;
+    color:grey;
+}
+.button {
+  font-family: sans-serif;
+  color:#64b3f4;
+  background-color:white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 20px;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+}
+.button:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3);
+  transition: 0.3s;
+}
+#but{
+  padding-top: 25px;
+}
+img{
+  padding-top: 15px;
+}
+body{
+    background: #c2e59c;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #64b3f4, #c2e59c);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #64b3f4, #c2e59c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+;
+}
+</style>
+</head>
+<body>
+  <div class="header">
+ <img src="/static/swissbg.png" id=logo height="50"></img>
+    <h1 style="font-size: 40px"> Swiss Ranks</h1>
+   </div> 
+    <div class="card" align="center">
+        <div class="container">
+          <br><br>
+            <button type=button id=b1 height=80 class="button" width=80 >Home</button><br><br>
+            <button type=button id=b2 height=80 class="button" width=80 onclick="window.location.href = '{{ url_for('move') }}';"> DataVisualization</button><b>
+        <br><br><button type=button id=b2 height=80 class="button" width=80 onclick="window.location.href = '{{ url_for('db') }}';"> ViewDB</button><b>
+        </div>
+    
+    </div>
+    <div class="card1" align="center">
+        <div class="container1">
+          <button type=button id=bc1 height='50px' class="button" width=80 >PieChart<h6>Statics On All Parts</h6></button>
+    <button type=button id=bc2 height=50 width=80 class="button" >BarChart<h6>Statics On Part_Status</h6></button>
+    <button type=button id=bc3 height=50 width=80 class="button" >BarChart<h6>Statics On Parts_CreatedBy</h6></button><br>
+    <button type=button id=bc4 height=50 width=80 class="button" >BarChart<h6>Statics On Parts_ApprovedBy</h6></button>
+        </div>
+    
+    </div>
+
+    <div class="result" 
+style="height:400px;background-color:'blue'; width:600px;max-width: 1360px;
+position: relative;
+  left: 400px;
+  bottom: -20px;">
+  <h1> <font color="white">Please Select a report -> </font></h1>
+</div>
+
+      
+
+  
+    
+
+
+</body>
+</html> 
